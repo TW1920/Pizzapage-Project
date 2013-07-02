@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>{$title}</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--
+	Configuration file
+    TWC Standalone mobile style name: Grey
+    @version 0.1.0: 2013-07 $
+    @copyright TWCportal.org (C) Copyright. All rights reserved.  
+    @license http://opensource.org/licenses/gpl-license.php GNU Public License   
+-->	
+	<link rel="stylesheet" href="http://pizzaproject.twcportal.eu/styles/mobile/theme/style.css" />
+	<script type="text/javascript" src="./highslide/highslide-full.js"></script>
+	<link rel="stylesheet" type="text/css" href="./highslide/highslide.css" />
+	<script src="http://pizzaproject.twcportal.eu/styles/mobile/jquery.min.js"></script>
+	<script>
+		var on_page = '';
+		var per_page = '';
+		var base_url = '';
+
+		$(document).bind('mobileinit', function() {
+			$.extend($.mobile, {
+				ajaxEnabled: false
+			});
+		});
+
+
+
+	</script>
+	<script type="text/javascript" language="JavaScript">
+		<!--
+		function toggleMe(a)
+		{
+		var e = document.getElementById(a);
+
+		// Prüfen ob das Element existiert
+		if(!e)return true;
+
+		// Umschalten
+		if(e.style.display=="none")
+		{
+		e.style.display="block"
+		}
+		else
+		{
+		e.style.display="none"
+		}
+
+		return true;
+		}
+		//-->
+	</script>
+	<script src="http://twcportal.de/styles/mobile/template/jquery.mobile.min.js"></script>
+</head>
+<body>
+<div data-role="page" data-theme="b" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>Pizza-Service "Maximale"</h1>
+	</div>
+	<div class="headerpic">
+ 		<img src="./images/Pizza_querformat1.jpg" alt="{$title}" style="width: 100%; height: 150px;">
+	</div>
+	<div data-role="content">
+			<div class="ui-body ui-body-e">
+				<h3>Herzlich Willkommen bei Pizza-Service "Maximale"</h3>
+				<p>Wir sin der beste und schnellste Pizzaservice in der Region Freising.<br /><br />Alle Infos Über uns finden Sie <a href="./about">hier</a></p>
+				
+			</div>		
+		<h2>Menü</h2>
+		<ul data-role="listview" data-inset="true" data-theme="c">
+			<li><a href="./order" >
+				<h3 class="unread">Pizza bestellen</h3>
+				<p><strong>Bestellen Sie hier Ihre Pizza schnell und einfach</strong></p>
+				<p>Wir haben auch Pasta!</p>
+			</a></li>
+			<li><a href="./about" >
+				<h3 class="unread">Über uns</h3>
+				<p>Erfahren Sie mehr Über uns &bull; Folgen Sie uns auf Facebook</p>
+			</a></li>
+			<li><a href="./contact" >
+				<h3 class="unread">Kontakt/Impressum</h3>
+				<p>Kontaktieren Sie uns</p>
+			</a></li>			
+		</ul><br />
+		
+		{$content}
+		
+	</div>
+	<div data-role="footer">
+		<h4>Powered by <a href="http://twcmail.org">TWCmail.org</a></h4>
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+﻿		<div class="ui-body ui-body-e">
+			<h3>Unsere Speisekarte</h3>
+			<p>Sie können entweder telefonisch bestellen oder Sie nutzen unser Online-Bestellformular:</p>
+				
+		</div>	
+		<form method="get" action="./index.php?" class="headerspace">
+		<input type="hidden" name="a" value="reg" />
+			<ul class="topiclist forums" id="box14">
+		<li class="row">
+			<dl class="icon" style="height: 5px;">
+				<dt title="Description">
+					Pizza-Name - Preise:
+				</dt>
+					<dd class="topics">Klein<dfn>Preis kleine Pizza</dfn></dd>
+					<dd class="posts">Groß<dfn>Preis große Pizza</dfn></dd>
+			</dl>
+		</li>	
+
+		<li class="row">
+			<dl class="icon" style="background-image: url(http://pizzaproject.twcportal.eu/images/pizza_1.jpg); background-repeat: no-repeat;">
+				<dt title="Pizza 1">
+					Pizza Prosciutto <br /> (mit Tomaten, Käse und Vorderschinken)	
+				</dt>
+					<dd class="topics">5€ <input type="text" name="p1k" title="Pizza Prosciutto" size="3" maxlength="1" /> <dfn>Preis kleine Pizza</dfn></dd>
+					<dd class="posts">10€ <input type="text" name="p1g" title="Pizza Prosciutto groß" size="3" maxlength="1" /> <dfn>Preis große Pizza</dfn></dd>
+			</dl>
+		</li>
+	
+		<li class="row">
+			<dl class="icon" style="background-image: url(http://pizzaproject.twcportal.eu/images/pizza_1.jpg); background-repeat: no-repeat;">
+				<dt title="Pizza 2">
+					Pizza Salami <br /> (mit Tomaten, Käse und Salami)
+				</dt>
+					<dd class="topics">5€ <input type="text" name="p2g" id="p2k" title="Pizza Salami klein" size="3" maxlength="1" /> <dfn>Preis kleine Pizza</dfn></dd>
+					<dd class="posts">10€ <input type="text" name="p2k" id="p1g" title="Pizza Salami groß" size="3" maxlength="1" /> <dfn>Preis große Pizza</dfn></dd>
+			</dl>
+		</li>
+	
+			</ul>
+		<div class="ui-body ui-body-e">
+			<h3>Bestelldaten:</h3>
+			<p>Sie können entweder mit Kundennummer oder mit neuen Daten bestellen:</p>
+			<p>Klicken Sie <a class="dlink" onclick="return toggleMe('form1')" href="javascript:void(0)">hier für die Eingabe der Kundennummer</a> und <a class="dlink" onclick="return toggleMe('Form2')" href="javascript:void(0)">hier wenn Sie ein neuer Kunde sind</a>.</p>
+		</div>				
+			<br />
+			<br />
+			<div style="display:none;" class="dbox" id="form1">
+				Kundennummer: <input type="text" name="knr" title="Kundennummer" size="10" maxlength="50" /><br />
+			</div>
+			<div style="display:none;" class="dbox" id="Form2">			
+				Name: <input type="text" name="besteller" title="Pizza Prosciutto groß" size="10" maxlength="50" /><br />
+				Adresse: <input type="text" name="adresse" title="Pizza Prosciutto groß" size="10" maxlength="50" /><br />
+				Ort: <input type="text" name="ort" title="Pizza Prosciutto groß" size="10" maxlength="50" /><br />
+			</div>
+			E-Mail-Adresse: <input type="text" name="email" id="email" maxlength="50" value="" data-theme="c" class="ui-input-text ui-body-c ui-corner-all ui-shadow-inset">	
+			<input type="submit" name="submit" value="Absenden" class="button2" maxlength="50" />	
+		</form>
