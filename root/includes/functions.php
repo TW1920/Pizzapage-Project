@@ -19,6 +19,10 @@ function getSettings($querySettings) {
 	return $querySettings;
 }
 
+function local_redirect($redirecturl) {
+	header("Location: $redirecturl");
+}
+
 //set titles
 function PageMain() {
 	global $TMPL;
